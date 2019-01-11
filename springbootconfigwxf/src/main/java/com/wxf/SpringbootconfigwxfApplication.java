@@ -1,0 +1,14 @@
+package com.wxf;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringbootconfigwxfApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootconfigwxfApplication.class, args);
+    }
+
+}
+
