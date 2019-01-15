@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author Administrator
@@ -32,8 +32,8 @@ public class miyaContorller {
     private int age;
 
     @RequestMapping(value = "/miya")
-    public String miya(){
-        return name +":" +age;
+    public String miya() {
+        return name + ":" + age;
     }
 
 }

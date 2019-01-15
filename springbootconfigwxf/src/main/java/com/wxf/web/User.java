@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author Administrator
@@ -26,8 +26,8 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource(value = "classpath:test.properties")
 @ConfigurationProperties(prefix = "com.forezp")
 public class User {
-    private  String name;
-    private  int age;
+    private String name;
+    private int age;
 
     public String getName() {
         return name;

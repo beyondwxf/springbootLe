@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author Administrator
@@ -27,13 +27,13 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableConfigurationProperties({ConfigBean.class})
 public class LucyContorller {
     @Autowired
-    private  ConfigBean configBean;
+    private ConfigBean configBean;
 
 
     @RequestMapping("/lucy")
-    public  String getlucy(){
+    public String getlucy() {
 
-        return configBean.getName()+"==>"+configBean.getUuid()+"==>"+configBean.getAge()+"==>"+configBean.getNumber()+"==>"+configBean.getAge();
+        return configBean.getName() + "==>" + configBean.getUuid() + "==>" + configBean.getAge() + "==>" + configBean.getNumber() + "==>" + configBean.getAge();
     }
 
 }

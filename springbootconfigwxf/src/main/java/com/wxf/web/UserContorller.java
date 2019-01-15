@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author Administrator
@@ -27,12 +27,12 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableConfigurationProperties({User.class})
 public class UserContorller {
     @Autowired
-    private  User user;
+    private User user;
 
     @RequestMapping(value = "/user")
-    public String user(){
+    public String user() {
 
-        return user.getName()+"------->"+user.getAge();
+        return user.getName() + "------->" + user.getAge();
     }
 
 }

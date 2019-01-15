@@ -14,7 +14,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * 〈一句话功能简述〉<br> 
+ * 〈一句话功能简述〉<br>
  * 〈〉
  *
  * @author Administrator
@@ -26,12 +26,11 @@ import org.springframework.stereotype.Component;
 public class ConfigBean {
 
 
-
     private String name;
     private int age;
-    private  int number;
+    private int number;
     private String uuid;
-    private  String max;
+    private String max;
     private String value;
     private String greeting;
 
@@ -68,7 +67,6 @@ public class ConfigBean {
     }
 
 
-
     public String getValue() {
         return value;
     }
@@ -80,6 +78,7 @@ public class ConfigBean {
     public String getGreeting() {
         return greeting;
     }
+
     public String getMax() {
         return max;
     }
@@ -87,10 +86,10 @@ public class ConfigBean {
     public void setMax(String max) {
         this.max = max;
     }
+
     public void setGreeting(String greeting) {
         this.greeting = greeting;
     }
-
 
 
 }
