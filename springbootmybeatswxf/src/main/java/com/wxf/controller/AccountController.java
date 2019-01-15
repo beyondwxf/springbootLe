@@ -13,10 +13,8 @@ package com.wxf.controller;
 import com.wxf.entity.Account;
 import com.wxf.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,5 +35,12 @@ public class AccountController {
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public   List<Account> getAccounts(){
         return accountService.findAccountList();
+    }
+
+
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public  Account getAccount(@PathVariable("id") int id){
+
+        return accountService.findAccount(id);
     }
 }
