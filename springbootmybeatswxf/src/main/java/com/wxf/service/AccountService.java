@@ -29,7 +29,7 @@ import java.util.List;
 public class AccountService {
 
     @Autowired
-    private AccountMapper accountMapper;
+    protected AccountMapper accountMapper;
 
     public int add(String name,double money){
         return  accountMapper.add(name,money);
