@@ -17,7 +17,7 @@ public class TestCustomerDao {
 
     @Test
     public void  testSaveUser(){
-        Customer customer = new Customer();
+        Customer  customer = new Customer();
         customer.setId(21L);
         customer.setFirstName("下啥啥啥");
         customer.setEndName("啊卡卡卡");
